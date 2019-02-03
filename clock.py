@@ -1,6 +1,6 @@
+from settings import *
 from tkinter import *
 from datetime import datetime
-from settings import *
 
 clock = Settings()
 

@@ -1,6 +1,23 @@
 {
+    "device": {
+        "room": 1234,
+        "teacher": " "
+    },
+    "window": {
+        "full_screen": false,
+        "update_ms": 100,
+        "window_title": "chronoberry"
+    },
     "background": {
         "color": "black"
+    },
+    "time": {
+        "color": "white",
+        "font": "arial",
+        "format": "%-I:%M:%S %p",
+        "size": "80",
+        "slant": "roman",
+        "weight": "bold"
     },
     "date": {
         "color": "white",
@@ -9,22 +26,5 @@
         "size": 20,
         "slant": "roman",
         "weight": "normal"
-    },
-    "device": {
-        "room": 1234,
-        "teacher": " "
-    },
-    "time": {
-        "color": "white",
-        "font": "arial",
-        "format": "%-I:%M:%S %p",
-        "size": 70,
-        "slant": "roman",
-        "weight": "bold"
-    },
-    "window": {
-        "full_screen": false,
-        "update_ms": 100,
-        "window_title": "chronoberry"
     }
 }
