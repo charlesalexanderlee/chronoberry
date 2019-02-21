@@ -1,6 +1,8 @@
 from settings import *
 from tkinter import *
 from datetime import datetime
+from network_client import connect_to_server
+import threading
 
 clock = Settings()
 
@@ -47,6 +49,9 @@ current_date = Label(container)
 container.pack(expand=True)
 current_time.pack()
 current_date.pack()
+
+client_thread = threading.Thread(target=connect_to_server)
+client_thread.start()
 
 tick()
 root.mainloop()

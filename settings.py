@@ -5,18 +5,14 @@ import json
 class Settings:
     SETTINGS_FILE = 'settings.json'
 
-
     def __init__(self):
         self.load_settings()
 
     # Compares the last JSON file modified time with the current JSON file modified time
-    # If the last modified time is different, the settings is updated
+    # If the last modified time is different, the settings are updated
     def update_settings(self):
         if self.last_update != os.stat(self.SETTINGS_FILE).st_mtime:
             self.load_settings()
-            return True
-        return False
-
 
     def load_settings(self):
         with open(self.SETTINGS_FILE) as json_settings:
@@ -50,4 +46,3 @@ class Settings:
             self.date_slant = settings['date']['slant']
             self.date_color = settings['date']['color']
             self.date_format = settings['date']['format']
-

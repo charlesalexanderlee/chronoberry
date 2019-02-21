@@ -14,8 +14,8 @@
     "time": {
         "color": "white",
         "font": "arial",
-        "format": "%-I:%M:%S %p",
-        "size": "80",
+        "format": "%-I:%M",
+        "size": "120",
         "slant": "roman",
         "weight": "bold"
     },
@@ -23,7 +23,7 @@
         "color": "white",
         "font": "arial",
         "format": "%A, %B %-d %Y",
-        "size": 20,
+        "size": 30,
         "slant": "roman",
         "weight": "normal"
     }
